@@ -79,21 +79,49 @@ const Home: NextPage = () => {
         </div>
       </div>
       <>
+        <p className="mt-4 text-center text-lg font-thin">
+          MySpot is a revolutionary software that allows you to transform any
+          device, such as a Raspberry Pi, into a hotspot network that provides
+          offline access to a wealth of educational content, including wikis,
+          dictionaries, and more.
+        </p>
+        <p className="mt-4 text-center text-lg font-thin">
+          With MySpot, you can easily create a WiFi network that is accessible
+          to anyone within range of the device, making it an ideal solution for
+          libraries, community centers, schools, and other public places.
+        </p>
+        <p className="mt-4 text-center text-lg font-thin">
+          And because MySpot works offline, it is especially useful for
+          vulnerable populations who may have limited or no internet access, or
+          face slow, expensive connections. Simply install MySpot on your device
+          and watch as it becomes a hub of knowledge and connection for all
+          those around you.
+        </p>
+        <Link
+          href="/docs"
+          className="my-4 h-10 w-full rounded-lg border border-gray-300 p-2 text-center hover:bg-slate-100"
+        >
+          Learn more and install
+        </Link>
+      </>
+      <>
         <h2 className="mt-2 text-center text-3xl font-bold">Why?</h2>
         <p className="mt-4 text-center text-lg font-thin">
-          The most valuable resource in the world is information, it is the
-          key to solve problems, to create new things, to improve the world.
-          </p>
+          The most valuable resource in the world is information, it is the key
+          to solve problems, to create new things, to improve the world. But the
+          information is not easylly transmitible, that&apos;s why internet
+          exists.
+        </p>
         <p className="mt-4 text-center text-lg font-thin">
-          The internet is a great tool, but it is not available everywhere. In
-          some places, it is not even available at all, in others, it is
-          expensive and slow. And this is a really important problem, if we look
-          at the data, the places with less resources are the ones with worse
-          access.
+          The internet is a great tool that everyone should be able to use, but
+          it is not available everywhere. In some places, it is not even
+          available at all, in others, it is expensive and slow. And this is a
+          really important problem, if we look at the data, the places with less
+          resources are the ones with worse access.
         </p>
         <img
           src="/share-of-individuals-using-the-internet.svg"
-          alt="Internet usage"
+          alt="Chart with internet access information"
           className="my-4 w-full max-w-xl rounded-xl shadow-2xl"
         />
         <p className="mt-4 text-center text-lg font-thin">
@@ -106,7 +134,7 @@ const Home: NextPage = () => {
         </p>
         <img
           src="/registered-mobile-money-accounts.svg"
-          alt="Internet usage"
+          alt="Chart with mobile money accounts information"
           className="my-4 w-full max-w-xl rounded-xl shadow-2xl"
         />
         <p className="mt-4 text-center text-lg font-thin">
@@ -118,7 +146,7 @@ const Home: NextPage = () => {
         </p>
         <img
           src="/mpesa.webp"
-          alt="Internet usage"
+          alt="A user holding a dumb phone with an SMS of a bank transfer"
           className="my-4 w-full max-w-xl rounded-xl shadow-2xl"
         />
         <p className="mt-4 text-center text-lg font-thin">
@@ -128,36 +156,6 @@ const Home: NextPage = () => {
           the most esentials features of internet like searching? This is the
           idea behind MySpot.
         </p>
-      </>
-      <>
-        <h2 className="mt-6 mb-2 text-center text-3xl font-bold">How?</h2>
-        <img
-          src="/rpi.jpeg"
-          alt="Rapsberry Pi"
-          className="my-4 w-full max-w-xl rounded-xl shadow-2xl"
-        />
-        <p className="mt-4 text-center text-lg font-thin">
-          We found a problem, use the internet to get information in the most
-          vulnerables places is not a reliable solution, so we need to find a
-          way to distribute the information for everyone in a cheap and
-          accesible way.
-        </p>
-        <p className="mt-4 text-center text-lg font-thin">
-          MySpot is a hotspot network, that means that you can configure a
-          device that will create a wifi network, and this network will be
-          available for everyone in the range of the device. This network will
-          have an embedded app that allows users to get information, and also to
-          share information with other users.
-        </p>
-        <p className="mt-4 text-center text-lg font-thin">
-          
-          </p>
-        <Link
-          href="/docs"
-          className="mt-4 h-10 w-full rounded-lg border border-gray-300 p-2 text-center hover:bg-slate-100"
-        >
-          Learn more and install
-        </Link>
       </>
       <>
         <h2 className="mt-6 mb-2 text-center text-3xl font-bold">
