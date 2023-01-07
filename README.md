@@ -69,4 +69,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 # Credits
 
-This project is created and mantained by [Juan Almanza](https://cv.scidroid.co) with the label of [Asofi](https://asofi.us).
+This project is created and mantained by [Juan Almanza](https://cv.scidroid.co) with the label of [ASOFI](https://asofi.us).

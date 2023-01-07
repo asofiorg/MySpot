@@ -1,4 +1,5 @@
 import { type NextPage } from "next";
+import Image from "next/image";
 
 const Docs: NextPage = () => {
   return (
@@ -12,10 +13,12 @@ const Docs: NextPage = () => {
       <h2 className="mt-4 text-center text-3xl font-bold">The Web Client</h2>
       <p className="mt-4 text-center text-lg font-thin">WIP</p>
       <h2 className="mt-4 text-center text-3xl font-bold">How to setup</h2>
-      <img
+      <Image
         src="/rpi.jpeg"
         alt="A rapsberry pi"
         className="my-4 w-full max-w-xl rounded-xl shadow-2xl"
+        width={600}
+        height={400}
       />
       <p className="mt-4 text-center text-lg font-thin">WIP</p>
     </div>

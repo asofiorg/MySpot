@@ -148,10 +148,12 @@ const Home: NextPage = () => {
           is M-PESA (M for mobile, PESA for money), a mobile money service that
           works through SMS, and it is available in Kenya, Tanzania, and Uganda.
         </p>
-        <img
+        <Image
           src="/mpesa.webp"
           alt="A user holding a dumb phone with an SMS of a bank transfer"
           className="my-4 w-full max-w-xl rounded-xl shadow-2xl"
+          width={600}
+          height={400}
         />
         <p className="mt-4 text-center text-lg font-thin">
           This show us that the information can have multiple ways to reach the
