@@ -9,8 +9,9 @@ load_dotenv()
 
 app = Flask(__name__)
 
-def ask(prompt):
-    request = requests.post(
+
+def ask_prompt(prompt):
+    response = requests.post(
         "https://api.writesonic.com/v2/business/content/chatsonic?engine=premium",
         headers={
             "Content-Type": "application/json",
@@ -23,8 +24,9 @@ def ask(prompt):
         }),
     )
 
-    response = request.json()
-    return response["response"]["message"]
+    response_json = response.json()
+    return response_json["message"]
+
 
 @app.route("/bot", methods=["POST"])
 def bot():
@@ -32,7 +34,7 @@ def bot():
     resp = MessagingResponse()
     msg = resp.message()
 
-    r = ask(incoming_msg)
+    r = ask_prompt(incoming_msg)
 
     if r:
         msg.body(r)
@@ -41,15 +43,16 @@ def bot():
 
     return str(resp)
 
+
 @app.route("/ask", methods=["POST"])
 def ask():
     request_data = request.get_json()
-    
+
     prompt = request_data["prompt"]
 
-    r = ask(prompt)
+    r = ask_prompt(prompt)
 
-    return r
+    return {"message": r}
 
 
 if __name__ == "__main__":

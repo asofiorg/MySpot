@@ -14,7 +14,7 @@ const Header: FC = () => {
       />
       <h1 className="mb-4 mt-2 text-center text-4xl font-bold">MySpot</h1>
       <p className="text-center text-lg font-thin">
-        Affordable Wi-Fi hotspots for areas with network inequality
+        Get up-to-date information, even when there's no connection
       </p>
     </div>
   );

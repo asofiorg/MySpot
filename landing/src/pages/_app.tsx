@@ -12,13 +12,13 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         <title>MySpot</title>
         <meta
           name="description"
-          content="DIY Wi-Fi educational hotposts for offline locations."
+          content="Get up-to-date information, even when there's no connection"
         />
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="MySpot" />
         <meta
           property="og:description"
-          content="DIY Wi-Fi educational hotposts for offline locations."
+          content="Get up-to-date information, even when there's no connection"
         />
       </Head>
       <div className="flex min-h-screen w-full flex-col items-center justify-center p-4">

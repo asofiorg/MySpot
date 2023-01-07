@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import { ask } from "../../lib/ai";
 
 const askFallback = (): string => {
-  return "This is a fallback response";
+  return "This is a fallback response, the connection between the chat interface and the hotspot service is still in progress";
 };
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
@@ -10,11 +10,12 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     // This is a mock function
     // the expected behavior should be send an SMS to the endpoint
     // and wait for a response to return it to the client
-    
+
     if (process.env.NODE_ENV === "development") {
-      res.status(200).json({ response: { message: askFallback() } });
+      const message = askFallback();
+      res.status(200).json({ response: { message } });
     } else {
-      const response = await ask(req.body.message);
+      const response = await ask(req.body.prompt);
       res.status(200).json({ response });
     }
   } catch (error) {

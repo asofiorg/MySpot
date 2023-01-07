@@ -80,22 +80,26 @@ const Home: NextPage = () => {
       </div>
       <>
         <p className="mt-4 text-center text-lg font-thin">
-          MySpot is a revolutionary software that allows you to transform any
-          device, such as a Raspberry Pi, into a hotspot network that provides
-          offline access to a wealth of educational content, including wikis,
-          dictionaries, and more.
+          MySpot is a revolutionary solution for getting accurate, up-to-date
+          information when the internet is not an option. With MySpot, you can
+          connect to the service via chat (SMS / WhatsApp) to ask questions or
+          request information and receive an immediate response, even on dumb
+          phones and other devices that may not have a connection.
         </p>
         <p className="mt-4 text-center text-lg font-thin">
-          With MySpot, you can easily create a WiFi network that is accessible
-          to anyone within range of the device, making it an ideal solution for
+          And with the power of the chat interface, you can transform any
+          device, such as a Raspberry Pi, into a hotspot network that provides
+          offline access to a wealth of educational content, including wikis,
+          dictionaries, and more. The MySpot hotspot is easily accessible to
+          anyone within range of the device, making it an ideal solution for
           libraries, community centers, schools, and other public places.
         </p>
         <p className="mt-4 text-center text-lg font-thin">
-          And because MySpot works offline, it is especially useful for
-          vulnerable populations who may have limited or no internet access, or
-          face slow, expensive connections. Simply install MySpot on your device
-          and watch as it becomes a hub of knowledge and connection for all
-          those around you.
+          MySpot is especially useful for vulnerable populations who may have
+          limited or no internet access, or face slow, expensive connections.
+          Simply install MySpot on your device and watch as it becomes a hub of
+          knowledge and connection for all those around you. Or use the text
+          interface to get access to the information anywhere at a low cost.
         </p>
         <Link
           href="/docs"
