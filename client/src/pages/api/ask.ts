@@ -11,7 +11,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     // the expected behavior should be send an SMS to the endpoint
     // and wait for a response to return it to the client
 
-    if (process.env.NODE_ENV === "development") {
+    if (process.env.NODE_ENV !== "production") {
       const message = askFallback();
       res.status(200).json({ response: { message } });
     } else {
