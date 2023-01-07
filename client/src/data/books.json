@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Romeo and Juliet",
+    "author": "William Shakespeare",
+    "description": "Romeo and Juliet is a tragedy written by William Shakespeare early in his career about two young star-crossed lovers whose deaths ultimately reconcile their feuding families. It was among Shakespeare's most popular plays during his lifetime and, along with Hamlet, is one of his most frequently performed plays. Today, the title characters are regarded as archetypal young lovers.",
+    "download": "/assets/books/rnj.pdf"
+  },
+  {
+    "name": "Alice in Wonderland",
+    "author": "Lewis Carroll",
+    "description": "Alice in Wonderland is an 1865 novel written by English author Charles Lutwidge Dodgson under the pseudonym Lewis Carroll. It tells of",
+    "download": "/assets/books/alice.pdf"
+  },
+  {
+    "name": "Treasure Island",
+    "author": "Robert Louis Stevenson",
+    "description": "Treasure Island is an adventure novel by Scottish author Robert Louis Stevenson, narrating a tale of \"buccaneers and buried gold\". Its influence is enormous on popular perceptions of pirates, including such elements as treasure maps marked with an \"X\", schooners, the Black Spot, tropical islands, and one-legged seamen bearing parrots on their shoulders.",
+    "download": "/assets/books/treasure.pdf"
+  }
+]
